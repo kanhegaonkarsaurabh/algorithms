@@ -5,9 +5,11 @@ class Heap:
         self.size = 0
         self.__init_heap(nums)
 
+
     def __init_heap(self, nums):
         for i in range(len(nums)):
             self.enqueue(nums[i])
+
 
     def enqueue(self, val):
         self.size += 1
@@ -16,6 +18,7 @@ class Heap:
             self.heap[i] = self.heap[i // 2]
             i //= 2
         self.heap[i] = val
+
 
     def dequeue(self):
         root, i = self.heap[1], 1
@@ -31,6 +34,7 @@ class Heap:
         self.heap[i] = self.heap[self.size]
         self.size -= 1
         return root
+
 
     def sort(self):
         container = self.heap[1:self.size + 1]
