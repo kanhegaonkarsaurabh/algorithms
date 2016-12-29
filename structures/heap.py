@@ -12,12 +12,12 @@ class Heap:
 
 
     def enqueue(self, val):
-        self.size += 1
-        i = self.size
-        while i > 1 and self.heap[i // 2] > val:
-            self.heap[i] = self.heap[i // 2]
-            i //= 2
+        i = self.size + 1
         self.heap[i] = val
+        while i > 1 and self.heap[i // 2] < self.heap[i]:
+            self.heap[i], i = self.heap[i // 2], i // 2
+        self.heap[i] = val
+        self.size += 1
 
 
     def dequeue(self):
@@ -27,8 +27,7 @@ class Heap:
             if self.heap[child + 1] < self.heap[child]:
                 child += 1
             if child < self.heap[self.size]:
-                self.heap[i] = self.heap[child]
-                i = child
+                self.heap[i], i = self.heap[child], child
             else:
                 break
         self.heap[i] = self.heap[self.size]
