@@ -9,7 +9,7 @@ def hash_code(string):
 
 
 def rabin_karp(string, text):
-    substring = text[:len(s)]
+    substring = text[:len(string)]
     string_hash = hash_code(string)
     text_hash = hash_code(substring)
     if string_hash == text_hash:
