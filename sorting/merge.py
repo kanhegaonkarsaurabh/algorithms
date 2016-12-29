@@ -7,7 +7,6 @@ def merge_sort(nums):
         right = merge_sort(nums[mid:])
         return merge(left, right)
 
-
 def merge(left, right):
     merged = []
     x, y = 0, 0

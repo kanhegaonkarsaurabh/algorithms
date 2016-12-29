@@ -5,13 +5,11 @@ class Node:
         self.left = None
         self.right = None
 
-
 class BinarySearchTree:
 
     def __init__(self):
         self.root = None
         self.size = 0
-
 
     def insert(self, val):
         if self.root is None:
@@ -19,20 +17,16 @@ class BinarySearchTree:
         else:
             self.root = self.__insert(self.root, val)
 
-
     def contains(self, val):
         return self.__contains(self.root, val)
-
 
     def remove(self, val):
         initial_size = self.size
         self.root = self.__remove(self.root, val)
         return initial_size != self.size
 
-
     def display(self):
         self.__display(self.root)
-
 
     def __insert(self, node, val):
         if node is None:
@@ -45,7 +39,6 @@ class BinarySearchTree:
                 node.right = self.__insert(node.right, val)
             return node
 
-
     def __contains(self, node, val):
         if node is None:
             return False
@@ -55,7 +48,6 @@ class BinarySearchTree:
             return self.__contains(node.left, val)
         if val > node.data:
             return self.__contains(node.right, val)
-
 
     def __remove(self, node, val):
         if node is None:
@@ -80,7 +72,6 @@ class BinarySearchTree:
                 node.data = temp.data
                 node.left = self.__remove(node.left, node.data)
         return node
-
 
     def __display(self, node):
         if node is not None:

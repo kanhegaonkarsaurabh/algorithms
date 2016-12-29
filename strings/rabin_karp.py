@@ -1,12 +1,10 @@
 BASE = 256
 
-
 def hash_code(string):
     code = 0
     for i in range(len(string)):
         code += ord(string[i]) * BASE ** (len(string) - i - 1)
     return code
-
 
 def rabin_karp(string, text):
     substring = text[:len(string)]

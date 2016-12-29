@@ -4,17 +4,14 @@ class Node:
         self.data = data
         self.next = None
 
-
     def __repr__(self):
         return str(self.data)
-
 
 class LinkedList:
 
     def __init__(self):
         self.head = None
         self.size = 0
-
 
     def add(self, data):
         if self.head is None:
@@ -25,7 +22,6 @@ class LinkedList:
                 temp = temp.next
             temp.next = Node(data)
         self.size += 1
-
 
     def remove(self, data):
         if self.head.data == data:
@@ -40,7 +36,6 @@ class LinkedList:
                 curr = curr.next
             prev.next = curr.next
         self.size -= 1
-
 
     def search(self, data):
         temp = self.head
