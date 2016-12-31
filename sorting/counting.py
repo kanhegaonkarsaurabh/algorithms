@@ -1,10 +1,9 @@
 def counting_sort(nums):
-    counts = [0] * (max(nums) + 1)
+    sorted_nums = []
+    counts = [[] for i in range(max(nums) + 1)]
     for i in range(len(nums)):
-        counts[nums[i]] += 1
-    output = []
+        counts[nums[i]].append(nums[i])
     for i in range(len(counts)):
-        if counts[i] != 0:
-            for k in range(counts[i]):
-                output.append(i)
-    return output
+        if counts[i]:
+            sorted_nums.extend(counts[i])
+    return sorted_nums
