@@ -1,6 +1,7 @@
 class HashTable:
 
     DEFAULT_SIZE = 10
+    LOAD_LIMIT = 0.5
 
     def __init__(self):
         self.table = [[] for i in range(self.DEFAULT_SIZE)]
@@ -17,7 +18,7 @@ class HashTable:
 
     def insert(self, key):
         self.keys += 1
-        if self.keys / len(self.table) > 0.5:
+        if self.keys / len(self.table) > self.LOAD_LIMIT:
             self.resize()
         index = hash(key) % len(self.table)
         self.table[index].append(key)
