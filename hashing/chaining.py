@@ -12,7 +12,7 @@ class HashTable:
         for i in range(len(self.table)):
             for key in self.table[i]:
                 index = hash(key) % len(table)
-                table[index].append(index)
+                table[index].append(key)
         self.table = table
 
     def insert(self, key):
