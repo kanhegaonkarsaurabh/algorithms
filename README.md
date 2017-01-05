@@ -51,3 +51,11 @@ Implementations of various algorithms and data structures. Most content is inspi
 - [Heap](https://github.com/shreydesai/algorithms/blob/master/structures/heap.py)
 
 - [Linked List](https://github.com/shreydesai/algorithms/blob/master/structures/list.py)
+
+## Trees
+
+- [In-Order](https://github.com/shreydesai/algorithms/blob/master/trees/in_order.py)
+
+- [Pre-Order](https://github.com/shreydesai/algorithms/blob/master/trees/pre_order.py)
+
+- [Level Order](https://github.com/shreydesai/algorithms/blob/master/trees/level_order.py)
