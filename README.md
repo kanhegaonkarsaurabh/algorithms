@@ -4,6 +4,10 @@ Implementations of various algorithms and data structures. Most content is inspi
 
 # Contents
 
+## Dynamic Programming
+
+- [Fibonacci](https://github.com/shreydesai/algorithms/blob/master/dynamic/fibonacci.py)
+
 ## Graphs
 
 - [Breadth-First Search](https://github.com/shreydesai/algorithms/blob/master/graphs/bfs.py)
