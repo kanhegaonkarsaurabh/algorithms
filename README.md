@@ -7,6 +7,7 @@ Implementations of various algorithms and data structures. Most content is inspi
 ## Dynamic Programming
 
 - [Fibonacci](https://github.com/shreydesai/algorithms/blob/master/dynamic/fibonacci.py)
+- [Coin Change](https://github.com/shreydesai/algorithms/blob/master/dynamic/coins.py)
 
 ## Graphs
 
