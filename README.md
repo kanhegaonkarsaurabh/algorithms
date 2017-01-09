@@ -16,6 +16,7 @@ Implementations of various algorithms and data structures. Most content is inspi
 - [Depth-First Search](https://github.com/shreydesai/algorithms/blob/master/graphs/dfs.py)
 
 - [Dijkstra](https://github.com/shreydesai/algorithms/blob/master/graphs/dijkstra.py)
+- [Coloring](https://github.com/shreydesai/algorithms/blob/master/graphs/coloring.py)
 
 ## Hashing
 
